@@ -15,5 +15,5 @@ function startGoogleAuth(clientId, redirectUri) {
 // Function to pass the authorization code to Unity
 function sendAuthCodeToUnity(authCode) {
     // Assuming you have a Unity object named 'gameInstance'
-    gameInstance.SendMessage('SignUpCanvas', 'ReceiveAuthCode', authCode);
+    gameInstance.SendMessage('AuthCanvas', 'ReceiveAuthCode', authCode);
 }
